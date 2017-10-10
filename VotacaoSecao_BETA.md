@@ -1,5 +1,5 @@
 # Votação Seção (BETA)
-  Consulte os votos agregados por regionalmente e politicamente
+  Consulte os votos agregados regionalmente e politicamente
 
 ## URL
 
