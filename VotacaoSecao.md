@@ -1,4 +1,4 @@
-# Votação Seção (BETA)
+# Votação Seção
   Consulte os votos agregados regionalmente
 
 ## URL
