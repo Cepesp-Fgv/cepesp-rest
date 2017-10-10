@@ -46,6 +46,35 @@
   curl -i -g -X GET "http://cepesp.io/api/consulta/tse?ano=2010&cargo=3&agregacao_regional=1&agregacao_politica=2&selected_columns[]="SIGLA_PARTIDO"&selected_columns[]="NUM_TURNO"&selected_columns[]="NOME_MACRO"&selected_columns[]="DESCRICAO_CARGO"&selected_columns[]="QTDE_VOTOS""
   ```
 
+## Cargo:
+
+| Cargo(position)      | Número |
+| ------------------------- |:------:|
+| Presidente                |   1    |
+| Governador                |   3    | 
+| Senador                   |   5    |
+| Deputado Federal          |   6    | 
+| Deputado Estadual         |   7    | 
+| Deputado Distrital        |   8    | 
+| Prefeito                  |   11   |
+| Vereador                  |   13   |
+
+## Ano:
+
+| Ano      | Cargos Disponíveis (Descrição) | Cargos Disponíveis (Numero) | 
+| ------------------------- |:------|:-----:|
+| 1998                |   Presidente, Governador, Senador, Deputado Federal, Deputado Estadual, Deputado Distrital   | 1,3,5,6,7,8 |
+| 2000                |   Prefeito, Vereador    | 11, 13 |
+| 2002                |   Presidente, Governador, Senador, Deputado Federal, Deputado Estadual, Deputado Distrital    | 1,3,5,6,7,8 |
+| 2004                |   Prefeito, Vereador    | 11, 13 | 
+| 2006                |   Presidente, Governador, Senador, Deputado Federal, Deputado Estadual, Deputado Distrital    | 1,3,5,6,7,8 |
+| 2008                |   Prefeito, Vereador    | 11, 13 |
+| 2010                |   Presidente, Governador, Senador, Deputado Federal, Deputado Estadual, Deputado Distrital    |  1,3,5,6,7,8 |
+| 2012                |   Prefeito, Vereador    | 11, 13 |
+| 2014                |   Presidente, Governador, Senador, Deputado Federal, Deputado Estadual, Deputado Distrital    |  1,3,5,6,7,8 |
+| 2016                |   Prefeito, Vereador    | 11, 13 |
+
+
 ## Colunas Disponíveis:
 
 Cada tipo de agregação gera colunas diferentes. (Agregação Regional e Política se combinam gerando uma única tabela)
