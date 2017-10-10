@@ -33,15 +33,15 @@
 ## Exemplos:
 
   ```bash
-  curl -i -X GET "http://cepesp.io/api/consulta/tse?ano=2014&cargo=1&agregacao_regional=0"
+  curl -i -X GET "http://cepesp.io/api/consulta/votos?ano=2014&cargo=1&agregacao_regional=0"
   ```
   
   ```bash
-  curl -i -X GET "http://cepesp.io/api/consulta/tse?anos="2014,2010"&cargo=3&agregacao_regional=1"
+  curl -i -X GET "http://cepesp.io/api/consulta/votos?anos="2014,2010"&cargo=3&agregacao_regional=1"
   ```
 
   ```bash
-  curl -i -g -X GET "http://cepesp.io/api/consulta/tse?ano=2010&cargo=3&agregacao_regional=1&selected_columns[]="SIGLA_PARTIDO"&selected_columns[]="NUM_TURNO"&selected_columns[]="NOME_MACRO"&selected_columns[]="DESCRICAO_CARGO"&selected_columns[]="QTDE_VOTOS""
+  curl -i -g -X GET "http://cepesp.io/api/consulta/votos?ano=2010&cargo=3&agregacao_regional=1&selected_columns[]="NUM_TURNO"&selected_columns[]="NOME_MACRO"&selected_columns[]="DESCRICAO_CARGO"&selected_columns[]="QTDE_VOTOS""
   ```
 
 ## Colunas Disponíveis:
@@ -50,16 +50,16 @@ Cada tipo de agregação regional adiciona colunas diferentes.
 
 ### Colunas padrões
 
-  - DATA_GERACAO
-	- HORA_GERACAO
-	- ANO_ELEICAO
-	- SIGLA_UE
-	- NUM_TURNO
-	- DESCRICAO_ELEICAO
-	- CODIGO_CARGO
-	- DESCRICAO_CARGO
-	- NUMERO_CANDIDATO
-	- QTDE_VOTOS
+- DATA_GERACAO
+- HORA_GERACAO
+- ANO_ELEICAO
+- SIGLA_UE
+- NUM_TURNO
+- DESCRICAO_ELEICAO
+- CODIGO_CARGO
+- DESCRICAO_CARGO
+- NUMERO_CANDIDATO
+- QTDE_VOTOS
 
 ### Agregação Regional
 
