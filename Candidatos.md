@@ -40,6 +40,35 @@
   ```bash
   curl -i -g -X GET "http://cepesp.io/api/consulta/candidatos?ano=2010&cargo=3&selected_columns[]="ANO_ELEICAO"&selected_columns[]="NUM_TURNO"&selected_columns[]="CODIGO_CARGO"&selected_columns[]="NOME_URNA_CANDIDATO"&selected_columns[]="NUMERO_CANDIDATO""
   ```
+## Cargo:
+
+| Cargo(position)      | Número |
+| ------------------------- |:------:|
+| Presidente                |   1    |
+| Governador                |   3    | 
+| Senador                   |   5    |
+| Deputado Federal          |   6    | 
+| Deputado Estadual         |   7    | 
+| Deputado Distrital        |   8    | 
+| Prefeito                  |   11   |
+| Vereador                  |   13   |
+
+## Ano:
+
+| Ano      | Cargos Disponíveis (Descrição) | Cargos Disponíveis (Numero) | 
+| ------------------------- |:------|:-----:|
+| 1998                |   Presidente, Governador, Senador, Deputado Federal, Deputado Estadual, Deputado Distrital   | 1,3,5,6,7,8 |
+| 2000                |   Prefeito, Vereador    | 11, 13 |
+| 2002                |   Presidente, Governador, Senador, Deputado Federal, Deputado Estadual, Deputado Distrital    | 1,3,5,6,7,8 |
+| 2004                |   Prefeito, Vereador    | 11, 13 | 
+| 2006                |   Presidente, Governador, Senador, Deputado Federal, Deputado Estadual, Deputado Distrital    | 1,3,5,6,7,8 |
+| 2008                |   Prefeito, Vereador    | 11, 13 |
+| 2010                |   Presidente, Governador, Senador, Deputado Federal, Deputado Estadual, Deputado Distrital    |  1,3,5,6,7,8 |
+| 2012                |   Prefeito, Vereador    | 11, 13 |
+| 2014                |   Presidente, Governador, Senador, Deputado Federal, Deputado Estadual, Deputado Distrital    |  1,3,5,6,7,8 |
+| 2016                |   Prefeito, Vereador    | 11, 13 |
+
+
 
 ## Colunas Disponíveis:
 
