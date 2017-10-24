@@ -1,4 +1,4 @@
-# Votação Seção (BETA)
+# Eleições por Cargo (BETA)
   Consulte os votos agregados regionalmente e politicamente
 
 ## URL
