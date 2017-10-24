@@ -1,4 +1,4 @@
-# Votação Seção
+# Eleições por Cargo
   Consulte os votos agregados regionalmente
 
 ## URL
