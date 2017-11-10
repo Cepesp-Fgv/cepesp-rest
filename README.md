@@ -7,5 +7,6 @@ O repositório de dados foi totalmente extraído da base dados do TSE, pós-proc
 ## Sumário
 1. [Consultar tabela Eleições por Cargo (BETA)](EleicoesPorCargo_BETA.md)
 2. [Consultar tabela Votação Seção](EleicoesPorCargo.md)
-1. [Consultar tabela Candidatos](Candidatos.md)
-1. [Consultar tabela Legendas](Legendas.md)
+3. [Consultar tabela Candidatos](Candidatos.md)
+4. [Consultar tabela Legendas](Legendas.md)
+5. [Aplicando Filtros](Filtros.md)
