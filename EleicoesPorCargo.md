@@ -164,3 +164,19 @@ Cada tipo de agregação regional adiciona colunas diferentes.
   - CODIGO_MICRO
   - NOME_MICRO
   - NUM_ZONA
+
+#### Votação Seção 
+  _Código: *9*_
+ - CODIGO_MACRO
+ - NOME_MACRO
+ - UF
+ - NOME_UF
+ - CODIGO_MESO
+ - NOME_MESO
+ - CODIGO_MICRO
+ - NOME_MICRO
+ - COD_MUN_TSE
+ - COD_MUN_IBGE
+ - NOME_MUNICIPIO
+ - NUM_ZONA
+ - NUM_SECAO
