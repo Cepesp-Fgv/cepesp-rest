@@ -20,9 +20,9 @@
    
    `agregacao_regional=[integer]`
    
-   
-
    **Opcionais:**
+   
+   `uf_filter=[string]` **Obrigatório somente quando agregação regional é `Votação Seção`
  
    `lang=[string]` <_`pt`|`en`_>
    
@@ -38,6 +38,10 @@
   
   ```bash
   curl -i -X GET "http://cepesp.io/api/consulta/votos?anos="2014,2010"&cargo=3&agregacao_regional=1"
+  ```
+
+  ```bash
+  curl -i -X GET "http://cepesp.io/api/consulta/votos?anos="2014"&cargo=1&agregacao_regional=9&uf_filter=CE"
   ```
 
   ```bash
