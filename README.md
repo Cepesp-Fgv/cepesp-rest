@@ -1,5 +1,5 @@
 # CEPESP//REST
-API REST para acessar dados do TSE
+API REST para acessar dados do TSE. Pode ser utilizada por meio de programas como Python e R.
 
 ## Sobre
 O repositório de dados foi totalmente extraído da base dados do TSE, pós-processada e organizada usando HiveQL e Pandas (Biblioteca Python). Além disso também é utilizado um cache interno à API que minimiza o tempo de resposta para consultas previamente feitas.
