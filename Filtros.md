@@ -16,7 +16,7 @@ Ex.:
 
 # Formato
 
-&filters[**NOME_DA_COLUNA**][name]="**VALOR_DA_BUSCA**"
+&filters[**NOME_DA_COLUNA**]="**VALOR_DA_BUSCA**"
 
  TAG             | Descrição
 ---------------- | ------------------------------------------------------------                                  
