@@ -22,7 +22,6 @@
    
    `agregacao_politica=[integer]`
    
-   
 
    **Opcionais:**
  
@@ -30,20 +29,20 @@
    
    `format=[string]` <_`csv`|`gzip`_>
    
-   `selected_columns[]=[string]`
+   `c[]=[string]` ou `selected_columns[]=[string]`
 
 ## Exemplos:
 
   ```bash
-  curl -i -X GET "http://cepesp.io/api/consulta/tse?ano=2014&cargo=1&agregacao_regional=0&agregacao_politica=2"
+  curl -i -X GET "http://cepesp.io/api/consulta/tse?ano=2014&cargo=1&agregacao_regional=0&agregacao_politica=2&ignore_version=true"
   ```
   
   ```bash
-  curl -i -X GET "http://cepesp.io/api/consulta/tse?anos="2014,2010"&cargo=3&agregacao_regional=1&agregacao_politica=2"
+  curl -i -X GET "http://cepesp.io/api/consulta/tse?anos="2014,2010"&cargo=3&agregacao_regional=1&agregacao_politica=2&ignore_version=true"
   ```
 
   ```bash
-  curl -i -g -X GET "http://cepesp.io/api/consulta/tse?ano=2010&cargo=3&agregacao_regional=1&agregacao_politica=2&selected_columns[]="SIGLA_PARTIDO"&selected_columns[]="NUM_TURNO"&selected_columns[]="NOME_MACRO"&selected_columns[]="DESCRICAO_CARGO"&selected_columns[]="QTDE_VOTOS""
+  curl -i -g -X GET "http://cepesp.io/api/consulta/tse?ano=2010&cargo=3&agregacao_regional=1&agregacao_politica=2&c[]="SIGLA_PARTIDO"&c[]="NUM_TURNO"&c[]="NOME_MACRO"&c[]="DESCRICAO_CARGO"&c[]="QTDE_VOTOS"&ignore_version=true"
   ```
 
 ## Cargo:
