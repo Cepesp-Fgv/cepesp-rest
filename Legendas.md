@@ -23,22 +23,22 @@
  
    `lang=[string]` <_`pt`|`en`_>
    
-   `format=[string]` <_`csv`|`gzip`_>
+   `format=[string]` <_`csv`|`json`_>
    
-   `selected_columns[]=[string]`
+   `c[]=[string]` ou `selected_columns[]=[string]`
 
 ## Exemplos:
 
   ```bash
-  curl -i -X GET "http://cepesp.io/api/consulta/legendas?ano=2014&cargo=1"
+  curl -i -X GET "http://cepesp.io/api/consulta/legendas?ano=2014&cargo=1&ignore_version=true"
   ```
   
   ```bash
-  curl -i -X GET "http://cepesp.io/api/consulta/legendas?anos="2014,2010"&cargo=3"
+  curl -i -X GET "http://cepesp.io/api/consulta/legendas?anos="2014,2010"&cargo=3&ignore_version=true"
   ```
 
   ```bash
-  curl -i -g -X GET "http://cepesp.io/api/consulta/legendas?ano=2010&cargo=3&selected_columns[]="ANO_ELEICAO"&selected_columns[]="NUM_TURNO"&selected_columns[]="CODIGO_CARGO"&selected_columns[]="NOME_PARTIDO"&selected_columns[]="NUMERO_PARTIDO""
+  curl -i -g -X GET "http://cepesp.io/api/consulta/legendas?anos=2010&cargo=3&c[]="ANO_ELEICAO"&c[]="NUM_TURNO"&c[]="CODIGO_CARGO"&c[]="NOME_PARTIDO"&c[]="NUMERO_PARTIDO"&ignore_version=true"
   ```
 
 ## Cargo:
