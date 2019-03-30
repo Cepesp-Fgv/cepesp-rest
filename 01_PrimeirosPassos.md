@@ -11,6 +11,8 @@ Nesta fase, é feita uma requisição HTTP com todos os parâmetros necessários
 O servidor responderá instantaneamente com um `id` identificação. 
 Guarde essa identificação, ela será utilizada para checar o *status* da consulta e posteriormente para visualizar o resultado.
 
+[Clique aqui](02_SolicitandoConsulta.md) para saber mais.
+
 ### 2. Espera
 Agora que você já possui a indentificação da consulta.
 O cliente efeturará uma nova requisição http passando o `id` recebido e o servidor retornará informado o *status* da consulta.
@@ -18,6 +20,8 @@ O _status_ pode ser `QUEUED`, `RUNNING`, `SUCCEEDED` ou `FAILED`.
 Quando o cliente receber os *status* `QUEUED` e `RUNNING` deverá esperar alguns segundos para consultar novamente.
 Se o cliente receber o *status* `FAILED`, receberá também a causa do erro.
 Se o cliente receber o *status* `SUCCEEDED`, quer dizer que a consulta foi bem sucessidida e ele pode processeguir para o terceiro passo.
+
+[Clique aqui](03_Espera.md) para saber mais.
 
 ### 3. Resultado
 Após a consulta ter sido processada. O cliente poderá realizar uma terceira requisição passando o `id` e aí então o servidor retornará de imediato o resultado da consulta.
