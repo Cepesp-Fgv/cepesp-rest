@@ -33,19 +33,19 @@
 ## Exemplos:
 
   ```bash
-  curl -i -X GET "http://cepesp.io/api/consulta/votos?ano=2014&cargo=1&agregacao_regional=0"
+  curl -i -X GET "http://cepesp.io/api/consulta/votos?ano=2014&cargo=1&agregacao_regional=0&ignore_version=true"
   ```
   
   ```bash
-  curl -i -X GET "http://cepesp.io/api/consulta/votos?anos="2014,2010"&cargo=3&agregacao_regional=1"
+  curl -i -X GET "http://cepesp.io/api/consulta/votos?anos="2014,2010"&cargo=3&agregacao_regional=1&ignore_version=true"
   ```
 
   ```bash
-  curl -i -X GET "http://cepesp.io/api/consulta/votos?anos="2014"&cargo=1&agregacao_regional=9&uf_filter=CE"
+  curl -i -X GET "http://cepesp.io/api/consulta/votos?anos="2014"&cargo=1&agregacao_regional=9&uf_filter=CE&ignore_version=true"
   ```
 
   ```bash
-  curl -i -g -X GET "http://cepesp.io/api/consulta/votos?ano=2010&cargo=3&agregacao_regional=1&selected_columns[]="NUM_TURNO"&selected_columns[]="NOME_MACRO"&selected_columns[]="DESCRICAO_CARGO"&selected_columns[]="QTDE_VOTOS""
+  curl -i -g -X GET "http://cepesp.io/api/consulta/votos?ano=2010&cargo=3&agregacao_regional=1&c[]="NUM_TURNO"&c[]="NOME_MACRO"&c[]="DESCRICAO_CARGO"&c[]="QTDE_VOTOS"&ignore_version=true"
   ```
 
 ## Cargo:
