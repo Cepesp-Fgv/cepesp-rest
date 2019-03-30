@@ -10,3 +10,4 @@ O repositório de dados foi totalmente extraído da base dados do TSE, pós-proc
 
 ## Sumário
 1. [Primeiros Passos](01_PrimeirosPassos.md)
+2. [Solicitando a Consulta](02_SolicitandoConsulta.md)
