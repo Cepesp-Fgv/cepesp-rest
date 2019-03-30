@@ -32,12 +32,12 @@ Listamos abaixo um resumo dos argumentos possíveis e onde estão disponíveis:
 | mun_filter                    | tse, votos                                      |
 | only_elected                  | tse, candidatos                                 |
 
-_PS: Os argumentos são os mesmos que os utilizados na API antiga_
-
 Também é possível selecionar as colunas que aparecerão no resultado da consulta. 
 Para isso, deve se passar o argumento `&c[]=<COLUNA>` para cada coluna que se deseja adicionar.
 
-Filtrar os resultados direto na consulta também é possível através do argumento `&filters[<COLUNA>]=<VALOR>`
+Filtrar os resultados direto na consulta também é possível através do argumento `&filters[<COLUNA>]=<VALOR>`.
+
+[Clique aqui](https://github.com/Cepesp-Fgv/tse-dados/wiki/Colunas) para ver quais as colunas estão disponíveis por base.
 
 ## A resposta do servidor
 Quando os argumentos são passados corretamente o servidor responde a requisição HTTP com um status 200 com o seguinte conteúdo:
