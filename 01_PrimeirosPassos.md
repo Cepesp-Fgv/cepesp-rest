@@ -25,3 +25,8 @@ Se o cliente receber o *status* `SUCCEEDED`, quer dizer que a consulta foi bem s
 
 ### 3. Resultado
 Após a consulta ter sido processada. O cliente poderá realizar uma terceira requisição passando o `id` e aí então o servidor retornará de imediato o resultado da consulta.
+
+[Clique aqui](04_Resultado.md) para saber mais.
+
+
+> Caso você ainda deseje usar a API utilizando o **protocolo antigo**, [clique aqui](05_APIAntiga.md).
