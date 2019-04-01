@@ -26,3 +26,5 @@ Vale ressaltar que o cliente deve esperar um tempo crescente entre uma solicita�
 Recomendamos executar a solicitação uma primeira vez e se ela retornar `QUEUED` ou `RUNNING` ele deverá esperar em torno de 16 segundos (o tempo médio de processamento atual) para efetuar a proxima checagem de _status_. 
 Se a consulta voltar a retornar `QUEUED` ou `RUNNING` o cliente deverá esperar o dobro do tempo e assim por diante.
 Uma vez que o servidor responder com _status_ `SUCCEEDED`, quer dizer que ele já pode processeguir para o terceiro passo.
+
+[Clique aqui para ir para o **Próximo Passo**](04_Resultado.md)
