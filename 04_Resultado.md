@@ -6,7 +6,7 @@ Uma vez que a consulta ficou pronta, o cliente poderá acessar o resultado atrav
 
 O cliente deve fornecer o \<ID\> recebido no passo 1.
 
-Vale ressaltar que é necessário o parâmetro `&ignore_version=true` para que você não receba mensagens do controle de versão das APIs Python e R.
+> Vale ressaltar que é necessário o parâmetro `&ignore_version=true` para que você não receba mensagens do controle de versão das APIs Python e R.
 
 A resposta do servidor será o output do arquivo CSV gerado. 
 O arquivo vem sempre com um cabeçalho com as colunas. 
