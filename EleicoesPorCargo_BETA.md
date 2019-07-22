@@ -42,7 +42,7 @@
   ```
 
   ```bash
-  curl -i -g -X GET "http://cepesp.io/api/consulta/tse?ano=2010&cargo=3&agregacao_regional=1&agregacao_politica=2&c[]="SIGLA_PARTIDO"&c[]="NUM_TURNO"&c[]="NOME_MACRO"&c[]="DESCRICAO_CARGO"&c[]="QTDE_VOTOS"&ignore_version=true"
+  curl -i -g -X GET "http://cepesp.io/api/consulta/tse?ano=2010&cargo=3&agregacao_regional=1&agregacao_politica=2&c[]=SIGLA_PARTIDO&c[]=NUM_TURNO&c[]=NOME_MACRO&c[]=DESCRICAO_CARGO&c[]=QTDE_VOTOS&ignore_version=true"
   ```
 
 ## Cargo:
