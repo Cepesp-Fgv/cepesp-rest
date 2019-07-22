@@ -16,7 +16,7 @@
    `cargo=[integer]`
  
    `ano=[integer]` ou `anos=[string]`
-   <_Exemplo: `&ano=1998` ou `&anos="1998,2000"`_>
+   <_Exemplo: `&ano=1998` ou `&anos=1998,2000`_>
    
    `agregacao_regional=[integer]`
    
@@ -38,7 +38,7 @@
   ```
   
   ```bash
-  curl -i -X GET "http://cepesp.io/api/consulta/tse?anos="2014,2010"&cargo=3&agregacao_regional=1&agregacao_politica=2&ignore_version=true"
+  curl -i -X GET "http://cepesp.io/api/consulta/tse?anos=2014,2010&cargo=3&agregacao_regional=1&agregacao_politica=2&ignore_version=true"
   ```
 
   ```bash
