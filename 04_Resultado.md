@@ -50,4 +50,4 @@ Arquivo: _LEGENDAS_PRESIDENTE_2018.csv_
 "2018","1","BR","BR","1","COLIGACAO","90","PROS","PT / PC do B / PROS"
 ```
 
-Caso haja algum problema na consulta, é possível checar o status no (Passo 3: Esperando o resultado)[03_Espera.md].
+Caso haja algum problema na consulta, é possível checar o status no [Passo 2: Esperando o resultado](03_Espera.md).
