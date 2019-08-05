@@ -1,13 +1,9 @@
 # [Passo 1] Solicitando Consulta
-Como explicado nos [Primeiros Passos](01_PrimeirosPassos.md), efetuaremos uma consulta com os parâmetros necessários para que a consulta seja gerada.
-Os parâmetros vão variar com a base a ser acessada. 
-A nossa API está localizada no servidor `cepesp.io` e todas as requisições devem partir desse endereço.
+O primeiro passo para se utilizar a API Rest é fazer o pedido de consulta com os parâmetros necessários. Os parâmetros vão variar com a base a ser acessada. O formato geral da consulta é:
 
-O endpoint para realizar a consulta é:
+[GET] `cepesp.io/api/consulta/athena/query?table=<TABELA>&<ARGUMENTOS>`
 
-[GET] `/api/consulta/athena/query?table=<TABELA>&<ARGUMENTOS>`
-
-Para solicitar uma consulta deve ser passado obrigatóriamente o nome da base (`?table=TABELA`) que está sendo acessada.
+Para solicitar uma consulta deve ser passado obrigatóriamente o nome da base de dados (`?table=TABELA`) que se deseja acessar.
 
 Atualmente existem 5 bases disponíveis para consulta:
 
@@ -21,10 +17,9 @@ Atualmente existem 5 bases disponíveis para consulta:
 | Base de Bens do Candidato     | secretarios   |
 | Base de Bens do Candidato     | filiados.     |
 
-Em seguida vem os <ARGUMENTOS> que dependem da base a ser acessada.
-Listamos abaixo um resumo dos argumentos possíveis e onde estão disponíveis:
+Em seguida, deve-se preencher os `<ARGUMENTOS>`, que variam dependendo da base a ser acessada. Listamos abaixo um resumo dos argumentos possíveis e onde estão disponíveis:
 
-| Argumento                     | Bases Suportadas                                |
+| Argumentos                    | Bases Suportadas ("TABELA")                     |
 |-------------------------------|-------------------------------------------------|
 | anos                          | tse, candidatos, legendas, votos, bem_candidato |
 | cargo                         | tse, candidatos, legendas, votos                |
@@ -39,12 +34,15 @@ Listamos abaixo um resumo dos argumentos possíveis e onde estão disponíveis:
 | goverment_period              | secretarios                                     |
 | party                         | filiados                                        |
  
-Também é possível selecionar as colunas que aparecerão no resultado da consulta. 
-Para isso, deve se passar o argumento `&c[]=<COLUNA>` para cada coluna que se deseja adicionar.
+Também é possível selecionar as colunas que aparecerão no resultado da consulta. Para isso, deve se passar o argumento `&c[]=<COLUNA>` para cada coluna que se deseja adicionar.
 
-Filtrar os resultados direto na consulta também é possível através do argumento `&filters[<COLUNA>]=<VALOR>`.
+Filtrar os resultados direto na consulta também é possível através do argumento `&filters[<COLUNA>]=<VALOR>`. Por exemplo, para filtrar candidatos(as) à Presidência em 2018 que se declaram pretos(as), utilizamos o seguinte link: 
 
-[Clique aqui](https://github.com/Cepesp-Fgv/tse-dados/wiki/Colunas) para ver quais as colunas estão disponíveis por base.
+`cepesp.io/api/consulta/athena/query?table=candidatos&anos=2014&cargo=1&c[]=ANO_ELEICAO&c[]=NUM_TURNO&c[]=SIGLA_UE&c[]=DESCRICAO_CARGO&c[]=SIGLA_PARTIDO&c[]=NUMERO_CANDIDATO&c[]=CPF_CANDIDATO&c[]=NOME_URNA_CANDIDATO&c[]=DESCRICAO_SEXO&c[]=DESCRICAO_COR_RACA&c[]=DESC_SIT_TOT_TURNO&filters[DESCRICAO_COR_RACA]=PRETA`
+
+Note que tivemos que acrescentar as colunas desejadas utilizando `&c[]=<COLUNA>`, visto que `DESCRICAO_COR_RACA` não é coluna default da consulta a candidatos.
+
+[Clique aqui](https://github.com/Cepesp-Fgv/tse-dados/wiki/Colunas) para ver quais as colunas estão disponíveis para cada base de dados.
 
 ## A resposta do servidor
 Quando os argumentos são passados corretamente o servidor responde a requisição HTTP com um status 200 com o seguinte conteúdo:
@@ -58,6 +56,6 @@ Quando os argumentos são passados corretamente o servidor responde a requisiç�
 }
 ```
 
-O cliente deverá guardar o `"id":9999` durante todo o processo.
+Guarde o `"id":9999` durante todo o processo.
 
-[Clique aqui para ir para o **Próximo Passo**](03_Espera.md)
+Depois disso você pode fazer download do [**Resultado**](04_Resultado.md).
