@@ -7,9 +7,9 @@ O servidor retornará 4 tipos de _status_ diferentes:
 - `FAILED` | _A consulta falhou._
 - `SUCCEEDED` | _A consulta está pronta._
 
-Para solicitar o status o cliente deve acessar o _endpoint_:
+Para solicitar o status o cliente deve acessar:
 
-[GET] `/api/consulta/athena/status?id=<ID>`
+[GET] `cepesp.io/api/consulta/athena/status?id=<ID>`
 
 No lugar de \<ID\> deve ser passado o id recebido no passo anterior. O servidor deverá responder a requisição HTTP com um status 200 e o seguinte _payload_:
 
@@ -27,4 +27,4 @@ Recomendamos executar a solicitação uma primeira vez e se ela retornar `QUEUED
 Se a consulta voltar a retornar `QUEUED` ou `RUNNING` o cliente deverá esperar o dobro do tempo e assim por diante.
 Uma vez que o servidor responder com _status_ `SUCCEEDED`, quer dizer que ele já pode processeguir para o terceiro passo.
 
-[Clique aqui para ir para o **Próximo Passo**](04_Resultado.md)
+[Clique aqui para ir para o **Último Passo**](04_Resultado.md)
