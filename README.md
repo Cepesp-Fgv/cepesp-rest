@@ -13,4 +13,3 @@ O repositório de dados foi totalmente extraído da base dados do TSE, pós-proc
 2. [Solicitando a Consulta](02_SolicitandoConsulta.md)
 3. [Esperando o Resultado](03_Espera.md)
 4. [Recebendo o Resultado](04_Resultado.md)
-5. [Suporte à API Antiga](05_APIAntiga.md)
