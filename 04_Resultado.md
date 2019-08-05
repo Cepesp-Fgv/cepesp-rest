@@ -1,8 +1,8 @@
 # O Resultado
 
-Uma vez que a consulta ficou pronta, o cliente poderá acessar o resultado através do _endpoint_:
+Uma vez que a consulta ficou pronta, você consegue acessá-la por meio do link:
 
-**[GET]** `/api/consulta/athena/result?id=<ID>&ignore_version=true`
+**[GET]** `cepesp.io/api/consulta/athena/result?id=<ID>&ignore_version=true`
 
 O cliente deve fornecer o \<ID\> recebido no passo 1.
 
@@ -10,7 +10,7 @@ O cliente deve fornecer o \<ID\> recebido no passo 1.
 
 A resposta do servidor será o output do arquivo CSV gerado. 
 O arquivo vem sempre com um cabeçalho com as colunas. 
-As colunas são sempre separadas por virgula.
+As colunas são sempre separadas por vírgulas.
 
 Exemplo de resposta:
 
@@ -49,3 +49,5 @@ Arquivo: _LEGENDAS_PRESIDENTE_2018.csv_
 "2018","1","BR","BR","1","COLIGACAO","77","SOLIDARIEDADE","PSDB / PTB / PP / PR / DEM / SOLIDARIEDADE / PPS / PRB / PSD"
 "2018","1","BR","BR","1","COLIGACAO","90","PROS","PT / PC do B / PROS"
 ```
+
+Caso haja algum problema na consulta, é possível checar o status no (Passo 3: Esperando o resultado)[03_Espera.md].
