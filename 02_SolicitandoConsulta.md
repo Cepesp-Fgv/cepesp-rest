@@ -15,7 +15,6 @@ Atualmente existem 5 bases disponíveis para consulta:
 | Base de Consolidado dos Votos | tse           |
 | Base de Bens do Candidato     | bem_candidato |
 | Base de Bens do Candidato     | secretarios   |
-| Base de Bens do Candidato     | filiados.     |
 
 Em seguida, deve-se preencher os `<ARGUMENTOS>`, que variam dependendo da base a ser acessada. Listamos abaixo um resumo dos argumentos possíveis e onde estão disponíveis:
 
@@ -25,14 +24,13 @@ Em seguida, deve-se preencher os `<ARGUMENTOS>`, que variam dependendo da base a
 | cargo                         | tse, candidatos, legendas, votos                |
 | agregacao_regional            | tse, votos                                      |
 | agregacao_politica            | tse                                             |
-| uf_filter                     | tse, votos, bem_candidato, filiados             |
+| uf_filter                     | tse, votos, bem_candidato                       |
 | mun_filter                    | tse, votos                                      |
 | only_elected                  | tse, candidatos                                 |
 | brancos                       | tse, votos                                      |
 | nulos                         | tse, votos                                      |
 | name_filter                   | secretarios                                     |
 | goverment_period              | secretarios                                     |
-| party                         | filiados                                        |
  
 Também é possível selecionar as colunas que aparecerão no resultado da consulta. Para isso, deve se passar o argumento `&c[]=<COLUNA>` para cada coluna que se deseja adicionar.
 
